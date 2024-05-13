@@ -1,0 +1,10 @@
+.video-container {
+    background-color: turquoise;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  
+  .video-wrapper {
+    max-width: 560px;
+    margin: 0 auto;
+  }
