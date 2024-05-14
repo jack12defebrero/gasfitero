@@ -8,3 +8,9 @@ if (
 } else {
   document.documentElement.classList.remove("dark");
 }
+
+
+AOS.init({
+  easing: 'ease-out-back',
+  duration: 1000
+});
