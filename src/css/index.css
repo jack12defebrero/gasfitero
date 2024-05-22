@@ -17,3 +17,15 @@
       height: 8rem; /* Reduce la altura del iframe específicamente para esta resolución */
     }
   }
+
+  .fondo-2{
+    background: linear-gradient(90deg, rgba(0, 73, 255, 0.15) 0%, rgba(82, 213, 255, 0.15) 100%), linear-gradient(0deg, #D8F3FF, #D8F3FF), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  }
+  
+
+
+  .fondo-3
+  {
+    background: linear-gradient(90deg, rgba(0, 73, 255, 0.15) 0%, rgba(111, 220, 255, 0.15) 100%), #FFFFFF;
+  }
+
