@@ -1,0 +1,94 @@
+
+/*Estilos del scrollbar
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(64, 62, 62);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 50px;
+} */
+
+
+:root {
+    --padding-container: 100px 0;
+    --color-title: #001A49;
+    --color-1: #7194ad;
+    --color-2:#92b9c2;
+    --color-3:#b6cfd1;
+    --color-4:#dae9e7;
+    --color-5: #f7f9f9;
+    --color-6: #282525;
+    --color-7:#000;
+    --footer-texto: rgba(255, 255, 255, 0.2);
+    --footer-a:#999999;
+    
+
+html {
+    overflow-x: hidden;
+  }
+  
+  *,
+  ::after,
+  ::before {
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  html {
+    display: block;
+  }
+  
+  *,
+  ::after,
+  ::before {
+    box-sizing: border-box;
+  }
+  
+  *,
+  ::after,
+  ::before {
+    box-sizing: border-box;
+  }
+  
+  /*
+  *Modificacion de la barra de desplazamiento predeterminado 
+  *por uno personalizado.
+  */
+  
+  /* Establece el ancho y la altura de la barra de desplazamiento y el color de fondo */
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  
+  /* Personaliza el aspecto del dedal o pulgar de la barra de desplazamiento */
+  ::-webkit-scrollbar-thumb {
+    /* Establece el radio de borde del dedal */
+    border-radius: 10px;
+    /* Crea un degradado de fondo para el dedal con tres colores diferentes */
+    background-image: -webkit-gradient(linear, left bottom, left top, from(var(--color-5)), to(var(--color-2)));
+    background-image: -webkit-linear-gradient(bottom, var(--color-1) 0%, var(--color-2) 100%);
+    background-image: linear-gradient(to top, var(--color-1) 0%, var(--color-3) 100%);
+    /* Establece el radio de borde para diferentes navegadores */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  
+  
+  /* Establece el color de fondo de la pista o carril de la barra de desplazamiento */
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+}
