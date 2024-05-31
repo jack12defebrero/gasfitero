@@ -86,8 +86,10 @@
     <div class="backdrop-blur-xl  border-4 border-t-indigo-500  border-y-blue-400 rounded-3xl  ">
        <div class="  p-10 flex flex-col lg:flex-row items-center lg:space-x-8 text-center lg:text-left max-w-screen-lg w-full">
         <div class="  flex flex-col justify-center max-w-lg w-full">
-            <h1 class="  text-white mb-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-none  dark:text-white">
-                ¿Necesitas gasfitero?
+           
+
+            <h1 class="text text-white mb-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-none  dark:text-white">
+              <span id="typed"></span>
             </h1>
             <p class=" justify-center items-center p-5 text-white mb-4 text-sm sm:text-base md:text-lg lg:text-xl font-normal  dark:text-gray-400">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro facere consequatur quam eveniet ex! Fuga quibusdam consectetur recusandae distinctio? Vel molestias natus velit eveniet accusamus illo quos unde? Assumenda, velit?.
@@ -443,4 +445,16 @@
 <script src="/src/js/redireccionamiento.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
 <script src="./src/js/main.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+  const typed = new Typed('#typed', {
+    strings: ['¿Necesitas gasfitero?'],
+    typeSpeed: 90,
+    backSpeed: 80,
+    loop: true,
+  });
+  
+  
+  
+  </script>
 </html>

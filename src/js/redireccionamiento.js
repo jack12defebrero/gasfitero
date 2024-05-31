@@ -3,6 +3,13 @@
 //?el visitante si esta interezado en un sitio web lo cual se puso el 
 //?El nombre del desarrollador "Mi persona"
 
+/* This JavaScript code snippet is setting up an event listener for a click on an element with the id
+"By". When this element is clicked, a SweetAlert modal is triggered. The modal presents a message
+with options for the user to choose which social media platform they want to be redirected to. The
+options include Facebook and Instagram. Depending on the user's choice, the script will redirect
+them to the corresponding social media profile of the developer, either Facebook or Instagram. The
+modal also includes animations for showing and hiding, as well as loading indicators before the
+redirection occurs. */
 const link = document.getElementById("By");
 link.addEventListener("click", (event) => {
     event.preventDefault();
@@ -44,6 +51,9 @@ link.addEventListener("click", (event) => {
 
 
 // boton flotante de whatsapp
+/* This code snippet is adding an event listener to a button with the id "whatsapp-btn". When this
+button is clicked, a SweetAlert modal is triggered. The modal displays a message thanking the user
+for contacting the company and offers to redirect them to WhatsApp for better communication. */
 document.querySelector('#whatsapp-btn').addEventListener('click', function (event) {
     event.preventDefault();
     Swal.fire({
