@@ -14,3 +14,10 @@ AOS.init({
   easing: 'ease-out-back',
   duration: 1000
 });
+
+
+window.addEventListener('load', () =>{
+  const contenedor1_loader = document.querySelector ('.contenedor1_loader');
+  contenedor1_loader.style.opacity = 0;
+  contenedor1_loader.style.visibility = 'hidden';
+});

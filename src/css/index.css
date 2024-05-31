@@ -29,3 +29,50 @@
     background: linear-gradient(90deg, rgba(0, 73, 255, 0.15) 0%, rgba(111, 220, 255, 0.15) 100%), #FFFFFF;
   }
 
+/* CSS */
+.contenedor1_loader {
+  background-color: #000000;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 3.5s;
+  -webkit-transition: all 3.5s;
+  -moz-transition: all 3.5s;
+  -ms-transition: all 3.5s;
+  -o-transition: all 3.5s;
+}
+
+.loader {
+  display: flex;
+}
+
+.loader img {
+  width: auto; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto;
+  margin: 0 5px; /* Espacio entre las imágenes */
+  animation: loader 1.5s infinite ease-in-out;
+  -webkit-animation: loader 1.9s infinite ease-in-out;
+}
+
+@keyframes loader {
+  0%, 100% {
+      transform: translateY(0) rotate(0);
+  }
+  25% {
+      transform: translateY(-20px) rotate(360deg);
+  }
+  50% {
+      transform: translateY(0) rotate(0);
+  }
+  75% {
+      transform: translateY(20px) rotate(-360deg);
+      -webkit-transform: translateY(20px) rotate(-360deg);
+      -moz-transform: translateY(20px) rotate(-360deg);
+      -ms-transform: translateY(20px) rotate(-360deg);
+      -o-transform: translateY(20px) rotate(-360deg);
+}
+}

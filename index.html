@@ -6,8 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./output.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script src="https://kit.fontawesome.com/a665aa3359.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/src/css/generales.css">
   <link rel="stylesheet" href="/src/css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
@@ -19,18 +24,32 @@
 
 
 
+  <a href="https://wa.link/tevkyx" id="whatsapp-btn" class="float" target="_blank">
+    <i class="fab fa-whatsapp my-float"></i> 
+</a>
 
 
+<div class="contenedor1_loader">
+  <div class="loader">
+    <img src="/src/img/Logo_jean-transparente.png" alt="">
+    <img src="/src/img/Logo_jean-transparente.png" alt="">
+    <img src="/src/img/Logo_jean-transparente.png" alt="">
+  </div>
+</div>
 
 
-<nav  class="bg-white  rounded-b-[22px] dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b  dark:border-gray-600">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+<nav  class="bg-white   rounded-b-[22px] dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b  dark:border-gray-600">
+  <div class=" max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
   <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
       <img src="/src/img/Logo_jean- barra.png" class="h-8" alt="  Soluciones figueroa">
       <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Figueroa</span>
   </a>
   <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-    <button type="button" class=" tracking-wider shadow-xl animate-bounce hover:animate-none   text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Chat whatsapp</button>
+    <a href="https://wa.link/tevkyx" target="_blank">
+      <button type="button" class=" tracking-wider shadow-xl animate-bounce hover:animate-none   text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Chat whatsapp</button>
+
+    </a>
+    
       <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -74,7 +93,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro facere consequatur quam eveniet ex! Fuga quibusdam consectetur recusandae distinctio? Vel molestias natus velit eveniet accusamus illo quos unde? Assumenda, velit?.
             </p>
             <div class="flex flex-col space-y-2 sm:flex-row sm:space-y-0 sm:space-x-4">
-                <a href="#" class=" inline-flex justify-center items-center py-2 px-4 text-sm sm:text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                <a href="https://wa.link/tevkyx" target="_blank" class=" inline-flex justify-center items-center py-2 px-4 text-sm sm:text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
                     Solicitalo ya!!!
                     <svg class="w-3.5 h-3.5 ml-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -98,13 +117,12 @@
 
 
  
- 
   <!--  contactenos segunda aseccion  seccion-->
 
-  <section class="mx-auto  dark:bg-gray-900 ">
+  <section class="mx-auto   dark:bg-gray-900 ">
 
     
-    <div class="   p-12 relative isolate overflow-hidden   shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+    <div class=" border-4 border-t-indigo-500  border-y-blue-400  mt-6  p-12 relative isolate overflow-hidden   shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
     <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0" aria-hidden="true">
       <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fill-opacity="0.7" />
       <defs>
@@ -133,7 +151,7 @@
           class=" tracking-wider shadow-xl animate-bounce hover:animate-none relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
           <span
             class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-            <a href="#"
+            <a href="https://wa.link/tevkyx" target="_blank"
               class="  inline-flex items-center text-black bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900  dark:text-white">
               Solicitalo ya!!!
               <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
@@ -235,11 +253,11 @@
 
 
 
-<section class=" bg-slate-400 rounded-3xl">
+<section class=" bg-slate-400 dark:bg-slate-900 rounded-3xl">
 
     <div class=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 dark:bg-gray-900 ">
-    <h2 class="text-3xl font-bold text-center dark:text-white">Our Blog</h2>
-    <p class="text-center text-lg mt-4 mb-12">We use an agile approach to test assumptions and connect with the needs of your audience early and often.</p>
+    <h2 class="text-3xl font-bold text-center dark:text-white">Servicios</h2>
+    <p class="text-center text-lg mt-4 mb-12 dark:text-white">We use an agile approach to test assumptions and connect with the needs of your audience early and often.</p>
     <div class=" fondo-3 p-10 rounded-3xl grid grid-cols-1 md:grid-cols-3 gap-6  content-between ">
 
       <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -248,10 +266,10 @@
         </a>
         <div class="p-5">
             <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">lorem lorem lorem lorem</h5>
             </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-            <a href="#" class=" tracking-wider shadow-xl animate-bounce hover:animate-none inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2024 so far, in reverse chronological order.</p>
+            <a href="https://wa.link/tevkyx" target="_blank" class=" tracking-wider shadow-xl animate-bounce hover:animate-none inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 Solicita ya!!!
                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -268,15 +286,15 @@
         </a>
         <div class="p-5">
             <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">lorem lorem lorem lorem</h5>
             </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-            <a href="#" class=" tracking-wider shadow-xl animate-bounce hover:animate-none inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                Solicita ya!!!
-                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2024 so far, in reverse chronological order.</p>
+            <a href="https://wa.link/tevkyx" target="_blank" class=" tracking-wider shadow-xl animate-bounce hover:animate-none inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              Solicita ya!!!
+               <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              </svg>
+          </a>
         </div>
       </div>
       
@@ -288,15 +306,15 @@
         </a>
         <div class="p-5">
             <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">lorem lorem lorem lorem</h5>
             </a>
             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-            <a href="#" class=" tracking-wider shadow-xl animate-bounce hover:animate-none inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                Solicita ya!!!
-                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-            </a>
+            <a href="https://wa.link/tevkyx" target="_blank" class=" tracking-wider shadow-xl animate-bounce hover:animate-none inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              Solicita ya!!!
+               <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              </svg>
+          </a>
         </div>
       </div>
       
@@ -307,42 +325,17 @@
         </a>
         <div class="p-5">
             <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">lorem lorem lorem lorem</h5>
             </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-            <a href="#" class=" tracking-wider shadow-xl animate-bounce hover:animate-none inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                Solicita ya!!!
-                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2024 so far, in reverse chronological order.</p>
+            <a href="https://wa.link/tevkyx" target="_blank" class=" tracking-wider shadow-xl animate-bounce hover:animate-none inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              Solicita ya!!!
+               <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              </svg>
+          </a>
         </div>
-      </div>
-      
-      
-      
-    
-  
-  
-   <div class="bg-white rounded-lg shadow overflow-hidden">
-            <img src="https://cdn.pixabay.com/photo/2024/04/08/14/09/nature-8683570_1280.jpg" alt="Office" class="w-full h-48 object-cover">
-            <div class="p-6">
-                <p class="text-sm font-semibold text-indigo-600">Article</p>
-                <h3 class="font-bold text-xl my-2">Our first office</h3>
-                <p class="text-zinc-600 text-base">Over the past year, Volosoft has undergone many changes! After months of preparation and some hard work, we moved to our new office.</p>
-                <div class="flex items-center mt-4">
-                    <img src="https://placehold.co/40x40" alt="Jese Leos" class="w-10 h-10 rounded-full mr-4">
-                    <div>
-                        <p class="text-zinc-800 text-sm font-semibold">Jese Leos</p>
-                        <p class="text-zinc-500 text-xs">Aug 15, 2021 - 16 min read</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-     
-  
-    
-       
+      </div>       
     </div>
 
 
@@ -353,6 +346,8 @@
 
 </div>
 </section>
+
+
 
 
 
@@ -411,6 +406,10 @@
         <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="#"
             class="hover:underline">™</a>. All Rights Reserved.
         </span>
+
+        <p> <a href="#" class="cinta  text-black dark:text-white" id="By">Made By: Jack Inga Ñaupa</a></p>
+
+
         <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
           <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -427,6 +426,7 @@
             </svg>
           </a>
 
+
         </div>
       </div>
     </div>
@@ -440,6 +440,7 @@
 
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="/src/js/redireccionamiento.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
 <script src="./src/js/main.js"></script>
 </html>

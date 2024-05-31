@@ -92,3 +92,153 @@ html {
     background-color: transparent;
   }
 }
+
+
+
+/* */
+.float {
+    position: relative;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 6px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 7px 5px 16px #000000;
+    z-index: 100;
+    transition: 0.8s;
+    /* Agrega una animación llamada "float" que se repite infinitamente */
+    animation: float 2s ease-in-out infinite;
+  }
+  
+  .boton-pulse {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #a53434;
+    background-color: #0fda45;
+    border-radius: 30px;
+    box-shadow: 0 0 0 0 #0fda45;
+    cursor: pointer;
+    animation: pulse-resplandor 1.5s cubic-bezier(.22,.61,.36,1) infinite;
+  
+  }
+  
+  .float:hover {
+    text-decoration: none;
+    color: #25d366;
+    background-color: #fff;
+    box-shadow: 7px 5px 16px #0fda45;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+      /* El botón comienza en su posición original */
+    }
+    50% {
+      transform: translateY(-10px);
+      /* El botón se mueve hacia arriba */
+    }
+    100% {
+      transform: translateY(0);
+      /* El botón vuelve a su posición original */
+    }
+  }
+  
+  @keyframes pulse-resplandor {
+    0% {
+      transform: scale(.99);
+      box-shadow: 0 0 0 0 #18d40e;
+      border-radius: 1rem;
+      -webkit-transform: scale(.99);
+      -moz-transform: scale(.99);
+      -ms-transform: scale(.99);
+      -o-transform: scale(.99);
+  }
+    70% {
+      transform: scale(1);
+      border: solid 3px rgb(255, 164, 8);
+      box-shadow:0 0 0 10px  rgba(15, 218, 69, 0.4),
+                 0 0 0 20px rgba(15, 218, 69, 0.2),
+                 0 0 0 25px rgba(15, 218, 69, 0.1);
+      border-radius: 9%;
+  }
+    100% {
+      transform: scale(.95);
+      box-shadow: 0 0 0 0 #0fda4500;
+      border-radius: 30px;
+      -webkit-transform: scale(.95);
+      -moz-transform: scale(.95);
+      -ms-transform: scale(.95);
+      -o-transform: scale(.95);
+  }
+  }
+  
+  
+  
+    /* Estilos para la animación del mensaje */
+    .float-message {
+    position: fixed;
+    bottom: 20px;
+    right: 110px;
+    background-color: #25d366;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    z-index: 101;
+    font-family: 'Tilt Neon', cursive;
+    transition: 0.5s;
+    animation:pulse-resplandor 1.5s cubic-bezier(.22,.61,.36,1) infinite;
+    font-weight: 800;
+    border: solid 2px black;
+  }
+    .float-message:hover {
+      color: #001A49;
+      font-size: 28px;
+    }
+    
+    @keyframes float-message {
+      0% {
+        transform: translateY(0); /* El mensaje comienza en su posición original */
+      }
+      50% {
+        transform: translateY(-10px); /* El mensaje se mueve hacia arriba */
+      }
+      100% {
+        transform: translateY(0); /* El mensaje vuelve a su posición original */
+      }
+    }
+  
+  .animated {
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  
+  .my-float{
+      margin-top:16px;
+    font-size: 30px;
+  }
