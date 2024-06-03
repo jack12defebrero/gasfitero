@@ -39,11 +39,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 3.5s;
-  -webkit-transition: all 3.5s;
-  -moz-transition: all 3.5s;
-  -ms-transition: all 3.5s;
-  -o-transition: all 3.5s;
+  transition: all 0.9s;
+  -webkit-transition: all 0.9s;
+  -moz-transition: all 0.9s;
+  -ms-transition: all 0.9s;
+  -o-transition: all 0.9s;
 }
 
 .loader {
@@ -51,11 +51,11 @@
 }
 
 .loader img {
-  width: auto; /* Ajusta el tamaño de la imagen según sea necesario */
-  height: auto;
-  margin: 0 5px; /* Espacio entre las imágenes */
-  animation: loader 1.5s infinite ease-in-out;
-  -webkit-animation: loader 1.9s infinite ease-in-out;
+  width: auto;
+  /*Ajustaeltamañodelaimagensegúnseanecesario*/height: auto;
+  margin: 0 5px;
+  /*Espacioentrelasimágenes*/animation: loader 1.5s infinite ease-in-out;
+  -webkit-animation: loader 1.5s infinite ease-in-out;
 }
 
 @keyframes loader {
