@@ -109,10 +109,11 @@
   <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
     <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
      
-      <h1 class="title-font font-medium text-5xl text-white">Hola soy Jampier</h1>
-      <h1 class=" title-font font-black text-6xl text-white"> realizo los siguientes servicios: <span class="type text-red-300"></span></h1>
+      <h1 class="title-font text-6xl text-white  m-8  py-12  font-extrabold   ">Soluciones figueroa</h1>
+      <h1 class="
+      text-4xl  text-white"> realizo los siguientes servicios: <span class="type text-red-300"></span></h1>
 
-      <p class="leading-relaxed mt-4 text-white">Poke slow-carb mixtape knausgaard, typewriter street art gentrify hammock starladder roathse. Craies vegan tousled etsy austin.</p>
+       
     </div>
     <div class="transform duration-500 hover:shadow-2xl cursor-pointer hover:-translate-y-5 border-2 border-rose-500 lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
       <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Escríbenos</h2>
@@ -133,7 +134,7 @@
 </section>
 
 <div class="mx-auto ">
-  <h2 class=" py-10 text-3xl font-bold mb-8 text-center  text-black dark:text-white">Trabaje en las siguientes empresas</h2>
+  <h2 class=" py-10 text-3xl   mb-8 text-center  text-black dark:text-white">Trabaje en las siguientes empresas</h2>
   <div class="relative font-inter antialiased">
 
     <main class="relative  flex flex-col justify-center  overflow-hidden">
@@ -187,7 +188,77 @@
 
 <section class="container mx-auto p-10 md:py-20 px-0 md:p-10 md:px-0 ">
   <section class="  relative px-10 md:p-0 transform duration-500 hover:shadow-2xl cursor-pointer hover:-translate-y-5  rounded-3xl ">
-      <img class="xl:max-w-6xl rounded-3xl" src="/src/img/fondo_12.jpg" alt="">
+ 
+
+    
+
+          <!-- Modal video component -->
+          <div class="[&_[x-cloak]]:hidden" x-data="{ modalOpen: false }">
+      
+              <!-- Video thumbnail 
+              
+              -->
+              <button class="  relative flex justify-center items-center focus:outline-none focus-visible:ring focus-visible:ring-indigo-300 rounded-3xl group" @click="modalOpen = true" aria-controls="modal" aria-label="Watch the video">
+                  <img class="  rounded-3xl shadow-2xl transition-shadow duration-300 ease-in-out " src="./src/img/fondo_12.jpg"   alt="Modal video thumbnail" />
+                  <!-- Play icon -->
+                  <svg class="absolute pointer-events-none group-hover:scale-110 transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" width="72" height="72">
+                      <circle class="fill-white" cx="36" cy="36" r="36" fill-opacity=".8" />
+                      <path class="fill-indigo-500 drop-shadow-2xl" d="M44 36a.999.999 0 0 0-.427-.82l-10-7A1 1 0 0 0 32 29V43a.999.999 0 0 0 1.573.82l10-7A.995.995 0 0 0 44 36V36c0 .001 0 .001 0 0Z" />
+                  </svg>
+              </button>
+              <!-- End: Video thumbnail -->
+          
+              <!-- Modal backdrop -->
+              <div
+                  class="fixed inset-0 z-[99999] bg-black bg-opacity-50 transition-opacity"
+                  x-show="modalOpen"
+                  x-transition:enter="transition ease-out duration-200"
+                  x-transition:enter-start="opacity-0"
+                  x-transition:enter-end="opacity-100"
+                  x-transition:leave="transition ease-out duration-100"
+                  x-transition:leave-start="opacity-100"
+                  x-transition:leave-end="opacity-0" 
+                  aria-hidden="true"
+                  x-cloak
+              ></div>
+              <!-- End: Modal backdrop -->
+          
+              <!-- Modal dialog -->
+              <div
+                  id="modal"
+                  class="fixed inset-0 z-[99999] flex px-4 md:px-6 py-6"
+                  role="dialog"
+                  aria-modal="true"
+                  x-show="modalOpen"
+                  x-transition:enter="transition ease-out duration-300"
+                  x-transition:enter-start="opacity-0 scale-75"
+                  x-transition:enter-end="opacity-100 scale-100"
+                  x-transition:leave="transition ease-out duration-200"
+                  x-transition:leave-start="opacity-100 scale-100"
+                  x-transition:leave-end="opacity-0 scale-75"
+                  x-cloak
+              >
+                  <div class="max-w-5xl mx-auto h-full flex items-center">
+                      <div class="w-full max-h-full rounded-3xl shadow-2xl aspect-video bg-black overflow-hidden" @click.outside="modalOpen = false" @keydown.escape.window="modalOpen = false">
+                          <video x-init="$watch('modalOpen', value => value ? $el.play() : $el.pause())" width="1920" height="1080" loop controls>
+                              <source src="./src/videos/inicio.mp4" type="" />
+                              Your browser does not support the video tag.
+                          </video>
+
+                         
+
+
+                      </div>
+                  </div>
+              </div>
+              <!-- End: Modal dialog -->
+          
+          </div>
+          <!-- End: Modal video component -->
+
+      </div>
+ 
+    
       <div class=" rounded-3xl content bg-white p-2 pt-8 md:p-12 pb-12 lg:max-w-lg w-full lg:absolute top-48 right-5">
           <div class=" flex justify-between font-bold text-sm">
               <p>servicios de reparaciones</p>
@@ -260,7 +331,7 @@
 
   <section class=" container mx-auto p-10 md:py-10 px-0 md:p-20 md:px-0 antialiased">
     <section class=" grid lg:grid-cols-2 2xl:grid-cols-3 grid-cols-1 gap-20 ">
-        <article class=" rounded-3xl mx-auto max-w-sm shadow-xl bg-cover bg-center min-h-150 transform duration-500 hover:-translate-y-2 cursor-pointer group" style="background-image: url(https://images.pexels.com/photos/3299386/pexels-photo-3299386.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=900);">
+        <article class=" rounded-3xl mx-auto max-w-sm shadow-xl bg-cover bg-center min-h-150 transform duration-500 hover:-translate-y-2 cursor-pointer group" style="background-image: url(./src/img/fondo_12.jpg);">
             <div class="rounded-3xl bg-black bg-opacity-20 min-h-150 px-10 flex flex-wrap flex-col pt-96 hover:bg-opacity-75 transform duration-300">
                 <h1 class="text-white text-3xl mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
                     On A Day Like Today
@@ -277,7 +348,7 @@
             </div>
         </article>
 
-        <article class=" rounded-3xl mx-auto max-w-sm shadow-xl bg-cover bg-center min-h-150 transform duration-500 hover:-translate-y-6 cursor-pointer group" style="background-image: url(https://images.pexels.com/photos/3299386/pexels-photo-3299386.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=900);">
+        <article class=" rounded-3xl mx-auto max-w-sm shadow-xl bg-cover bg-center min-h-150 transform duration-500 hover:-translate-y-6 cursor-pointer group" style="background-image: url(./src/img/fondo_12.jpg);">
           <div class=" rounded-3xl bg-black bg-opacity-20 min-h-150 px-10 flex flex-wrap flex-col pt-96 hover:bg-opacity-75 transform duration-300">
               <h1 class="text-white text-3xl mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
                   On A Day Like Today
@@ -293,7 +364,7 @@
           </div>
       </article>
 
-        <article class=" rounded-3xl mx-auto max-w-sm shadow-xl bg-cover bg-center min-h-150 transform duration-500 hover:-translate-y-2 cursor-pointer group" style="background-image: url(https://images.pexels.com/photos/3325720/pexels-photo-3325720.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);">
+        <article class=" rounded-3xl mx-auto max-w-sm shadow-xl bg-cover bg-center min-h-150 transform duration-500 hover:-translate-y-2 cursor-pointer group" style="background-image: url(./src/img/fondo_12.jpg);">
             <div class=" rounded-3xl bg-black bg-opacity-20 min-h-150 px-10 flex flex-wrap flex-col pt-96 hover:bg-opacity-75 transform duration-300">
                 <h1 class="text-white text-3xl mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
                     The Illusionist
@@ -309,7 +380,7 @@
             </div>
         </article>
 
-        <article class=" rounded-3xl mx-auto max-w-sm shadow-xl bg-cover bg-center min-h-150 transform duration-500 hover:-translate-y-2 cursor-pointer group" style="background-image: url(https://images.pexels.com/photos/3304855/pexels-photo-3304855.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);">
+        <article class=" rounded-3xl mx-auto max-w-sm shadow-xl bg-cover bg-center min-h-150 transform duration-500 hover:-translate-y-2 cursor-pointer group" style="background-image: url(./src/img/fondo_12.jpg);">
             <div class=" rounded-3xl bg-black bg-opacity-20 min-h-150 px-10 flex flex-wrap flex-col pt-96 hover:bg-opacity-75 transform duration-300">
                 <h1 class="text-white text-3xl mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
                     Loneliness Within
@@ -352,24 +423,43 @@
         </div>
         <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
           <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Ress</h2>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Secciones</h2>
             <ul class="text-gray-600 dark:text-gray-400">
-              <li class="mb-4">
-                <a href="" class="hover:underline">Fl</a>
+              <li class=" mb-4">
+                <a href="" class="hover:underline">Inicio</a>
               </li>
               <li>
-                <a href="https://tailwindcss.com/" class="hover:underline">S</a>
+                <a href="" class="hover:underline">Sobre mi</a>
+              </li>
+              <li>
+                <a href="" class="hover:underline">Servicios</a>
+              </li>
+              <li>
+                <a href="" class="hover:underline">Contacto</a>
               </li>
             </ul>
           </div>
           <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">F us</h2>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">redes sociales</h2>
             <ul class="text-gray-600 dark:text-gray-400">
-              <li class="mb-4">
-                <a href="#" class="hover:underline ">Gb</a>
+              <li class=" mb-4">
+                <a href="#" class="   block py-2 px-3 text-blue-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700  md:dark:hover:bg-transparent dark:border-gray-700 hover:text-gray-900 dark:hover:text-white">
+                <svg class="w-9 h-9" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                    clip-rule="evenodd" />
+                </svg>
+                </a>
               </li>
-              <li>
-                <a href="#" class="hover:underline">Did</a>
+        
+              <li class="mb-4">
+                <a href="#" class="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-pink-700 md:p-0 md:dark:hover:text-pink-500 dark:text-white dark:hover:bg-gray-700  md:dark:hover:bg-transparent  dark:border-pink-700   text-pink-500 hover:text-gray-900 dark:hover:text-pink-700">
+                <svg class="w-9 h-9"" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                    clip-rule="evenodd" />
+                </svg>
+                </a>
               </li>
             </ul>
           </div>
